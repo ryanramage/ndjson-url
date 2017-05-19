@@ -20,7 +20,7 @@ The template url you provide can follow the template literal syntax of es6.
 Sometimes you want to copy fields, you can add
 
 ```
-cat data.ndjson | ndjson-url "http://place.com/${_id}" --copy="name,address"
+cat data.ndjson | ndjson-url "http://place.com/${_id}" --copy='name,address'
 
 ```
 
