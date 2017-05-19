@@ -25,6 +25,10 @@ cat data.ndjson | ndjson-url "http://place.com/<%=_id%>"
 
 ```
 
+This will copy the name and address fields from the incoming json 
+row to the response from hte ndjson url
+
+
 ## License
 
 MIT
