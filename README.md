@@ -15,6 +15,16 @@ http "http://somewhere:5984/gabby-contacts/_design/temp2/_view/conversations?inc
 the format of the url is using lodash template syntax
 
 
+## Copy option
+
+Sometimes you want to copy fields, you can add 
+
+```
+cat data.ndjson | ndjson-url "http://place.com/<%=_id%>" 
+--copy="name,address"
+
+```
+
 ## License
 
 MIT
