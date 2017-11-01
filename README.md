@@ -28,6 +28,18 @@ This will copy the name and address fields from the incoming json rows in data.n
  to the response from the ndjson url
 
 
+## Method option
+
+Sometimes you want to issue a delete to the url. That can be done with
+
+```
+cat data.ndjson | ndjson-url --method=delete "http://place.com/${_id}?rev=${rev}"
+
+```
+
+
+
+
 ## License
 
 MIT
