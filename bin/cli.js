@@ -9,4 +9,4 @@ var copy = null
 if (config.copy) {
   copy = config.copy.split(',')
 }
-require('../')(process.stdin, urlTemplate, copy, config.method).pipe(process.stdout)
+require('../')(process.stdin, urlTemplate, copy, config.method, config).pipe(process.stdout)
